@@ -27,3 +27,6 @@ def market_page():
 @app.route('/about/<username>')
 def about_page(username):
     return f'<h1>Username: {username}</h1>'
+
+if __name__ == '__main__':
+    app.run(debug=True)
